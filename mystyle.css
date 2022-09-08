@@ -63,12 +63,12 @@ header a{
     text-decoration: none;
 }
 .about{
-    font-size: 21px;
+    font-size: larger;
 }
 .about :hover{
     color: darkseagreen;
     background-color:rgb(241, 223, 190);
-    font-size: larger;
+    font-size: x-large;
 }
 .page{
     font-size: larger;
@@ -128,34 +128,87 @@ li{
     color: rgb(255, 168, 80);
 }
 
-/* style table */
-table, th, td{
+/* style tables */
+.size{
     top: 150%;
     border: none;
     border-collapse: collapse;
     text-align: center;
     background-color: rgb(55, 102, 86);
-}
-th, td{
-    padding: 14px;
-    color: rgb(232, 174, 65);
-    width: 100%;
-}
-.size{
     height: 100%;
     width: 100%;
     overflow: hidden;
 }
-table{
+.size th, td{
+    padding: 14px;
+    color: rgb(232, 174, 65);
     width: 100%;
+}
+.size th{
+    font-size: large;
 }
 .size img{
     height: auto;
     width: 300px;
 }
+.name{
+  font-family: Font2;
+}
 .companionplants{
-  border: 10px;
-  border-color: aqua;
+  text-align: center;
+  background-color: rgba(230, 230, 181, 0.637);
+}
+.companionplants, .companionplants th{
+  border: 2px solid;
+  border-color:black;
+  border-collapse: collapse;
+}
+.companionplants td{
+  border: 1px solid;
+  border-color:black;
+  border-collapse: collapse;
+}
+.companionplants th, .plant{
+  font-size: large;
+  padding: 10px;
+}
+.plant{
+  color: rgb(240, 151, 119);
+}
+.companionplants th, td{
+  width: 25%;
+}
+.popular{
+  width: 1%;
+  font-size: large;
+}
+.common, .common tr{
+  border: 2px solid;
+  border-color: rgb(68, 114, 99);
+  border-collapse: collapse;
+  background-color: rgb(229, 241, 230);
+}
+.edible td{
+  border: 1px solid;
+  border-collapse: collapse;
+}
+.edible li{
+  color: rgb(114, 149, 111);
+  line-height: 20px;
+}
+.edible{
+  border-collapse: collapse;
+  background-color: rgba(219, 243, 225, 0.702);
+}
+.tableheading{
+  color: coral;
+  text-align: center;
+  font-size: large;
+  font-weight:200;
+}
+.gardenideas{
+  text-align: center;
+  line-height: 30px;
 }
 
 /* style footer */
@@ -289,5 +342,48 @@ footer p{
     .next,
     .text {
       font-size: 11px
+    }
+  }
+
+  /* style automatic slideshow */
+  * {
+    box-sizing: border-box
+  }
+  .mySlides {
+    display: none
+  }
+  .automaticslideshown img {
+    vertical-align: middle;
+  }
+  .automaticslideshow{
+    max-width: 1000px;
+    position:static;
+    margin: auto;
+  }
+  .active,
+  .dot:hover {
+    background-color: #111111;
+  }
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
     }
   }
