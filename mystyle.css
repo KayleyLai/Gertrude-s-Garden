@@ -63,7 +63,7 @@ header a{
     text-decoration: none;
 }
 .about{
-    font-size: larger;
+    font-size: 22px;
 }
 .about :hover{
     color: darkseagreen;
@@ -249,7 +249,7 @@ footer p{
     vertical-align: middle;
   }
   .slideshow-container {
-    max-width: 400px;
+    max-width: 350px;
     position:relative;
     margin: auto;
   }
