@@ -345,45 +345,71 @@ footer p{
     }
   }
 
-  /* style automatic slideshow */
-  * {
-    box-sizing: border-box
-  }
-  .mySlides {
-    display: none
-  }
-  .automaticslideshown img {
-    vertical-align: middle;
-  }
-  .automaticslideshow{
-    max-width: 1000px;
-    position:static;
-    margin: auto;
-  }
-  .active,
-  .dot:hover {
-    background-color: #111111;
-  }
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  @-webkit-keyframes fade {
-    from {
-      opacity: .4
-    }
-    to {
-      opacity: 1
-    }
-  }
-  @keyframes fade {
-    from {
-      opacity: .4
-    }
-    to {
-      opacity: 1
-    }
-  }
+/* style automatic slideshow */
+  #slideshow {
+    width:600px;
+    margin:0 auto;
+    overflow:hidden;
+}
+
+.container {
+    width:2400px; /* 600 x 4 */
+    position:relative;
+    -webkit-animation:slide 8s ease-in-out infinite;
+    -moz-animation:slide 8s ease-in-out infinite;
+    -ms-animation:slide 8s ease-in-out infinite;
+    -o-animation:slide 8s ease-in-out infinite;
+    animation:slide 8s ease-in-out infinite;
+}
+
+.container section {
+    width:600px;
+    height:290px;
+    float:left;
+}
+
+.container section:nth-child(1)
+.container section:nth-child(2)
+.container section:nth-child(3)
+.container section:nth-child(4)
+
+.container:hover {
+   animation-play-state:running;
+   -webkit-animation-play-state:running;
+}
+
+@-webkit-keyframes slide {
+    0% {left:0;}
+    25% {left:-600px;}
+    50% {left:-1200px;}
+    75% {left:-1800px;}
+    100% {left:0;}
+}
+@-moz-keyframes slide {
+    0% {left:0;}
+    25% {left:-600px;}
+    50% {left:-1200px;}
+    75% {left:-1800px;}
+    100% {left:0;}
+}
+@-ms-keyframes slide {
+    0% {left:0;}
+    25% {left:-600px;}
+    50% {left:-1200px;}
+    75% {left:-1800px;}
+    100% {left:0;}
+}
+@-o-keyframes slide {
+    0% {left:0;}
+    25% {left:-600px;}
+    50% {left:-1200px;}
+    75% {left:-1800px;}
+    100% {left:0;}
+}
+@keyframes slide {
+    0% {left:0;}
+    25% {left:-600px;}
+    50% {left:-1200px;}
+    75% {left:-1800px;}
+    100% {left:0;}
+}
