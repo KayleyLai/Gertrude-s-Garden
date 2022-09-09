@@ -74,10 +74,10 @@ header a{
     font-size: larger;
 }
 .nav2{
-    top: 165px;
+    top: 169px;
     background-color: beige;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
     position: fixed;
     padding: 18px;
@@ -88,6 +88,7 @@ header a{
 .nav2 a{
     text-decoration: none;
 }
+
 
 /* style main */
 main{
@@ -129,6 +130,9 @@ li{
 }
 
 /* style tables */
+table h5{
+  color: coral;
+}
 .size{
     top: 150%;
     border: none;
@@ -252,6 +256,7 @@ footer p{
     max-width: 350px;
     position:relative;
     margin: auto;
+    z-index: -1;
   }
   /* Next & previous buttons */
   .prev,
@@ -355,6 +360,7 @@ footer p{
 .container {
     width:2400px; /* 600 x 4 */
     position:relative;
+    z-index: -1;
     -webkit-animation:slide 8s ease-in-out infinite;
     -moz-animation:slide 8s ease-in-out infinite;
     -ms-animation:slide 8s ease-in-out infinite;
@@ -413,3 +419,10 @@ footer p{
     75% {left:-1800px;}
     100% {left:0;}
 }
+
+/* style wireframe images */
+.wireframes img{
+  width: 50%;
+}
+
+
