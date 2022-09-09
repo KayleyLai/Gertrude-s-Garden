@@ -195,7 +195,7 @@ table h5{
   background-color: rgb(229, 241, 230);
 }
 .edible td{
-  border: 1px solid;
+  border: none;
   border-collapse: collapse;
 }
 .edible li{
@@ -205,6 +205,9 @@ table h5{
 .edible{
   border-collapse: collapse;
   background-color: rgba(219, 243, 225, 0.702);
+}
+.coral{
+  color: coral;
 }
 .tableheading{
   color: coral;
