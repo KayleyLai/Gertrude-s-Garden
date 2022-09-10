@@ -13,10 +13,12 @@ body{
         src: url(Fonts/Jost-VariableFont_wght.ttf);
     }
 
+
 /* style span */
 span{
     color: rgb(241, 223, 190);
 }
+
 /* style header */
 body header{
     background-color:rgb(241, 223, 190);
@@ -130,6 +132,10 @@ a{
 li{
     color: rgb(255, 168, 80);
 }
+.link{
+  text-decoration: underline;
+  color: #ed9256;
+}
 
 /* style tables */
 table h5{
@@ -154,7 +160,6 @@ table h5{
     font-size: large;
 }
 .size img{
-    height: auto;
     width: 300px;
 }
 .name{
@@ -188,7 +193,7 @@ table h5{
   width: 1%;
   font-size: large;
 }
-.common, .common tr{
+.common tr{
   border: 2px solid;
   border-color: rgb(68, 114, 99);
   border-collapse: collapse;
@@ -204,7 +209,7 @@ table h5{
 }
 .edible{
   border-collapse: collapse;
-  background-color: rgba(219, 243, 225, 0.702);
+  background-color: rgba(200, 221, 205, 0.719);
 }
 .coral{
   color: coral;
@@ -218,6 +223,20 @@ table h5{
 .gardenideas{
   text-align: center;
   line-height: 30px;
+}
+
+/* alignment styling */
+.top{
+  vertical-align: top;
+}
+.middle{
+  vertical-align: middle;
+}
+.textleft{
+  text-align: left;
+}
+.textcentre{
+  text-align: center;
 }
 
 /* style footer */
@@ -365,6 +384,7 @@ footer p{
     }
   }
 
+  
 /* style automatic slideshow */
   #slideshow {
     width:600px;
