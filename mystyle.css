@@ -129,7 +129,7 @@ main img{
 }
 /* style main text for pages with a 2nd nav */
 .lower{
-    padding: 230px;
+    padding-top: 230px;
 }
 /* style links */
 a{
