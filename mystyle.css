@@ -33,12 +33,8 @@ header img{
 header a{
     size: 100px;
 }
-.page{
-    color: darkseagreen;
-    font-size: larger;
-}
 
-/* style nav */
+/* style main nav */
 .nav1{    
     color: white;
     position: fixed;
@@ -48,6 +44,7 @@ header a{
     font-size: 19px;
     left: 150px;
 }
+/* make nav 1 a flexbox */
 .nav1 ol{
     display: flex;
     justify-content: space-between;
@@ -56,6 +53,7 @@ header a{
 .nav1 li{
     list-style: none;
 }
+/* change background colour, colour, and padding when the nav links are hovered over */
 .nav1 li :hover{
     background-color: darkseagreen;
     padding: 10px;
@@ -65,6 +63,7 @@ header a{
     color: white;
     text-decoration: none;
 }
+/* specific styling for 'about' page link */
 .about{
     font-size: 22px;
 }
@@ -73,9 +72,12 @@ header a{
     background-color:rgb(241, 223, 190);
     font-size: x-large;
 }
+/* styling to make the font size of the link larger when the user in on that page */
 .page{
     font-size: larger;
 }
+/* style nav 2 (for hyperlinks within the pages)*/
+/* makes nav 2 a flexbox, positioning and colour */
 .nav2{
     top: 169px;
     background-color: beige;
@@ -102,6 +104,7 @@ main{
     line-height: 20px;
     font-size:medium;
 }
+/* style main headings */
 main h1{
     color: rgb(114, 157, 129);
     text-align: center;
@@ -112,19 +115,23 @@ main h2{
 main h3, h4{
     color: rgb(114, 157, 129);
 }
+/* style images in the main */
 main img{
     margin: 0 auto;
     width: 100%;
 }
+/* style image caption */
 .caption{
     color:rgb(252, 180, 24);
     font-size:small;
     line-height: 0;
     font-family: Font2;
 }
+/* style main text for pages with a 2nd nav */
 .lower{
     padding: 230px;
 }
+/* style links */
 a{
     text-decoration: none;
     color: rgb(255, 168, 80);
@@ -137,10 +144,25 @@ li{
   color: #ed9256;
 }
 
+
+/* style text coral colour */
+.coral{
+  color: coral;
+}
+/* style headings */
+.tableheading{
+  color: coral;
+  text-align: center;
+  font-size: large;
+  font-weight:200;
+}
+
+
 /* style tables */
 table h5{
   color: coral;
 }
+/* style indoor plants table */
 .size{
     top: 150%;
     border: none;
@@ -165,6 +187,7 @@ table h5{
 .name{
   font-family: Font2;
 }
+/* style companion plants chart table */
 .companionplants{
   text-align: center;
   background-color: rgba(230, 230, 181, 0.637);
@@ -189,6 +212,7 @@ table h5{
 .companionplants th, td{
   width: 25%;
 }
+/* style popular companion plants table */
 .popular{
   width: 1%;
   font-size: large;
@@ -199,6 +223,7 @@ table h5{
   border-collapse: collapse;
   background-color: rgb(229, 241, 230);
 }
+/* style benefits of a home garden table */
 .edible td{
   border: none;
   border-collapse: collapse;
@@ -211,30 +236,26 @@ table h5{
   border-collapse: collapse;
   background-color: rgba(200, 221, 205, 0.719);
 }
-.coral{
-  color: coral;
-}
-.tableheading{
-  color: coral;
-  text-align: center;
-  font-size: large;
-  font-weight:200;
-}
+/* style garden ideas table */
 .gardenideas{
   text-align: center;
   line-height: 30px;
 }
 
 /* alignment styling */
+/* position at top */
 .top{
   vertical-align: top;
 }
+/* position in centre */
 .middle{
   vertical-align: middle;
 }
+/* position text to the left */
 .textleft{
   text-align: left;
 }
+/* position text to the centre */
 .textcentre{
   text-align: center;
 }
